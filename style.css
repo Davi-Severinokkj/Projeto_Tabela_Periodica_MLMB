@@ -1,0 +1,39 @@
+.header_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;font-family: cursive;
+}
+.menu-lista {
+    display: flex; /* Define o layout flexbox */
+    flex-wrap: wrap; /* Permite quebra de linha quando o espaço acabar */
+    justify-content: center; /* Centraliza os itens (opcional) */
+    list-style: none; /* Remove bolinhas da lista */
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.menu-lista li {
+    flex: 1 1 auto; /* Itens crescem e encolhem automaticamente */
+    text-align: center;
+}
+
+.menu-lista a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border: 1px solid #444; /* Borda para visualizar a quebra */
+}
+
+.menu-lista a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    .menu-lista {
+        flex-direction: column; /* Força itens para baixo */
+    }
+}
