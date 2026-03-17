@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap');
+
+/* RESET */
+body{
+    margin:0;
+    padding:0;
+    font-family:"Google Sans", sans-serif;
+}
+
+/* HEADER */
+
+.header_container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+    padding:10px;
+}
+
+#buttonBack{
+    text-decoration:none;
+    font-size:20pt;
+    padding:10px;
+    color:black;
+}
+
+#buttonBack:hover{
+    background:rgba(0,0,0,0.05);
+    border-radius:3px;
+}
+
+/* MENU */
+
+.menu-area{
+    position:relative;
+}
+
+#buttonMenu{
+    border:none;
+    background:whitesmoke;
+    font-size:20px;
+    cursor:pointer;
+    padding:8px 12px;
+}
+
+#menuDropdown{
+    position:absolute;
+    right:0;
+    top:40px;
+    background:white;
+    border-radius:6px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:180px;
+    display:none;
+}
+
+#menuDropdown li a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:black;
+}
+
+#menuDropdown li a:hover{
+    background:#f0f0f0;
+}
+
+#menuDropdown.ativo{
+    display:block;
+}
+
+/* TABELA PERIÓDICA */
+
+.table-periodic{
+    display:grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap:10px;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+/* ELEMENTO */
+
+.elemento{
+    position:relative;
+    width:80px;
+    height:100px;
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* número */
+.numero{
+    position:absolute;
+    top:5px;
+    left:8px;
+    font-size:12px;
+}
+
+/* símbolo */
+.simbolo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* nome */
+.nome{
+    font-size:12px;
+    margin-top:5px;
+}
