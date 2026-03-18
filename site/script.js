@@ -1,48 +1,63 @@
-document.querySelectorAll(".metais_alcalinos").forEach(el => {
-    el.style.background = "#008080"
+// ===== CORES POR CLASSE =====
+
+const cores = {
+    metais_alcalinos: "#008080",
+    metais_alcalinos_terrosos: "#00FFFF",
+    metais_de_transicao: "#6A5ACD",
+    metais_pos_transicao: "#7FFFD4",
+    semi_metais: "#B0E0E6",
+    nao_metais_poliatomicos: "#87CEFA",
+    nao_metais_diatomicos: "#5F9EA0",
+    gases_nobres: "#BA55D3",
+    desconhecidos: "#4B0082",
+    lantanideos: "#C71585",
+    actinideos: "#FF1493"
+}
+
+// aplica cores automaticamente
+Object.keys(cores).forEach(classe => {
+    document.querySelectorAll(`.${classe}`).forEach(el => {
+        el.style.background = cores[classe]
+    })
 })
 
-document.querySelectorAll(".metais_alcalinos_terrosos").forEach(el => {
-    el.style.background = "#00FFFF"
-})
 
-document.querySelectorAll(".metais_de_transição").forEach(el => {
-    el.style.background = "#6A5ACD"
-})
-
-document.querySelectorAll(".metais_pós_transição").forEach(el => {
-    el.style.background = "#7FFFD4"
-})
-
-document.querySelectorAll(".semi_metais").forEach(el => {
-    el.style.background = "#B0E0E6"
-})
-
-document.querySelectorAll(".semi_metais").forEach(el => {
-    el.style.background = "#B0E0E6"
-})
+// ===== MENU =====
 let botao = document.querySelector("#buttonMenu")
 let menu = document.querySelector("#menuDropdown")
 
-botao.addEventListener("click", function(){
+botao.addEventListener("click", () => {
     menu.classList.toggle("ativo")
 })
 
-window.onload = () => {
-    document.getElementById("modal").style.display = "none"
-}
 
+// ===== MODAL =====
+const modal = document.getElementById("modal")
+const titulo = document.getElementById("titulo")
+const descricao = document.getElementById("descricao")
 
+// adiciona evento em TODOS os elementos
+document.querySelectorAll(".elemento").forEach(el => {
+    el.addEventListener("click", () => {
+        titulo.innerText = el.dataset.nome
+        descricao.innerText = el.dataset.desc
+        modal.style.display = "block"
+    })
+})
 
-let elemento = document.querySelector(".elemento")
-elemento.addEventListener('click', abrirModal())
-
-function abrirModal(nome, descricao){
-    document.getElementById("modal").style.display = "block"
-    document.getElementById("titulo").innerText = nome
-    document.getElementById("descricao").innerText = descricao
-}
-
+// fechar modal
 function fecharModal(){
-    document.getElementById("modal").style.display = "none"
+    modal.style.display = "none"
+}
+
+// fechar clicando fora
+window.addEventListener("click", (e) => {
+    if(e.target === modal){
+        fecharModal()
+    }
+})
+
+// garantir que inicia fechado
+window.onload = () => {
+    modal.style.display = "none"
 }

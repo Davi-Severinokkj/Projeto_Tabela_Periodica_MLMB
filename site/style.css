@@ -146,7 +146,7 @@ body{
 .modal{
     display: none;
 }
-.modal {
+.modal{
     display: none;
     position: fixed;
     top: 0;
