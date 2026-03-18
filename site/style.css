@@ -11,9 +11,8 @@ body{
 
 .header_container{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
- 
+    justify-content:space-around;
+    align-items:center; 
     margin:auto;
     padding:10px;
 }
@@ -74,17 +73,13 @@ body{
 
 /* TABELA PERIÓDICA */
 
-.interface{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0px; margin: 0px;
-}
+
 
 .table-periodic{
     display:grid;
     grid-template-columns: repeat(18, 1fr);
-    padding: 90px 90px 90px 90px;
+    padding: 50px;
+    margin: auto;
     list-style: none;
 }
 .table-periodic a{
