@@ -13,7 +13,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    max-width:1200px;
+ 
     margin:auto;
     padding:10px;
 }
@@ -78,15 +78,14 @@ body{
 .table-periodic{
     display:grid;
     grid-template-columns: repeat(18, 1fr);
-    gap:10px;
-    max-width:1200px;
-    margin:20px auto;
+    padding: 50px;
     list-style: none;
 }
 .table-periodic a{
     text-decoration: none;
     color: black;
 }
+
 
 /* ELEMENTO */
 
