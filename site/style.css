@@ -17,17 +17,16 @@ body{
     margin:auto;
     padding:10px;
 }
+.header_container img{
+    padding: 0px;
+    margin: 0px;
+}
 
 #buttonBack{
     text-decoration:none;
     font-size:20pt;
     padding:10px;
     color:black;
-}
-
-#buttonBack:hover{
-    background:rgba(0,0,0,0.05);
-    border-radius:3px;
 }
 
 /* MENU */
@@ -46,9 +45,9 @@ body{
 
 #menuDropdown{
     position:absolute;
+    z-index: 999;
     right:0;
     top:40px;
-    background:white;
     border-radius:6px;
     box-shadow:0 4px 10px rgba(0,0,0,0.15);
     list-style:none;
@@ -75,10 +74,17 @@ body{
 
 /* TABELA PERIÓDICA */
 
+.interface{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px; margin: 0px;
+}
+
 .table-periodic{
     display:grid;
     grid-template-columns: repeat(18, 1fr);
-    padding: 50px;
+    padding: 90px 90px 90px 90px;
     list-style: none;
 }
 .table-periodic a{
