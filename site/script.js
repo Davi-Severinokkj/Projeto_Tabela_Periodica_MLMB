@@ -6,9 +6,11 @@ botao.addEventListener("click", function(){
 })
 
 let elemento = document.querySelector(".simbolo")
-elemento.addEventListener('click' , informacao{
-    
-})
+elemento.addEventListener('click' , informacao())
+
+function informacao(){
+
+}
 
 let imagem_elemento = document.querySelector("#image_element")
 let informacao_elemento = document.querySelector(".info_element")
