@@ -11,10 +11,11 @@ body{
 
 .header_container{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center; 
     margin:auto;
     padding:10px;
+    border-bottom: 1px solid;
 }
 .header_container img{
     padding: 0px;
@@ -43,16 +44,25 @@ body{
 }
 
 #menuDropdown{
-    position:absolute;
-    z-index: 999;
-    right:0;
-    top:40px;
+
+    position: fixed;   /* 🔥 mudança aqui */
+
+    top: 60px;
+    right: 20px;
+
+    z-index: 9999;
+
+    background: white;
+
     border-radius:6px;
     box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
     list-style:none;
     padding:0;
     margin:0;
+
     width:180px;
+
     display:none;
 }
 
