@@ -40,7 +40,7 @@
     <div class="table-periodic">
 
     <!-- HIDROGÊNIO -->
-    <div class="elemento" style="grid-column:1; grid-row:1; background: #5F9EA0;">
+    <div class="elemento" onclick="abrirModal('Hidrogênio' , 'Cu')" style="grid-column:1; grid-row:1; background: #5F9EA0;">
         <span class="numero">1</span>
         <a href="#" class="simbolo">H</a>
         <span class="nome">Hidrogênio</span>
@@ -875,9 +875,12 @@
     </div>
 </section>
 
+<!-- Modal -->
 <div id="modal" class="modal">
     <div class="modal-content">
-        
+        <span onclick="fecharModal()" class="fechar">&times;</span>
+        <h2 id="titulo"></h2>
+        <p id="descricao"></p>
     </div>
 </div>
 
