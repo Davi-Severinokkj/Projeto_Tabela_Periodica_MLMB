@@ -91,6 +91,7 @@ body{
     padding: 50px;
     margin: auto;
     list-style: none;
+    border-bottom: 1px solid;
 }
 .table-periodic a{
     text-decoration: none;
@@ -123,9 +124,21 @@ body{
     font-size:28px;
     font-weight:bold;
 }
+.simbolo:hover{
+    transform: scale(1.2);
+    color: rgba(0, 0, 0, 0.705);
+    transition: 0.1s;
+}
 
 /* nome */
 .nome{
     font-size:12px;
     margin-top:5px;
+}
+
+/* sessão de informações dos elementos */
+.info-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
