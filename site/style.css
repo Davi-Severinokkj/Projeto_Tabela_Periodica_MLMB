@@ -81,6 +81,11 @@ body{
     gap:10px;
     max-width:1200px;
     margin:20px auto;
+    list-style: none;
+}
+.table-periodic a{
+    text-decoration: none;
+    color: black;
 }
 
 /* ELEMENTO */
