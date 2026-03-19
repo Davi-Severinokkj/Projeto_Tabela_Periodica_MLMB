@@ -13,6 +13,8 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center; 
+    flex-direction: row;
+    flex-wrap: wrap;
     margin:auto;
     padding:10px;
     border-bottom: 1px solid;
@@ -45,7 +47,7 @@ body{
 
 #menuDropdown{
 
-    position: fixed;   /* 🔥 mudança aqui */
+    position: fixed;
 
     top: 60px;
     right: 20px;
@@ -83,10 +85,8 @@ body{
 
 /* TABELA PERIÓDICA */
 
-
-
 .table-periodic{
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(18, 1fr);
     padding: 50px;
     margin: auto;
@@ -171,3 +171,24 @@ body{
     font-size: 20px;
 }
 
+.metais_alcalinos { background: #008080; }
+
+.metais_alcalinos_terrosos { background: #00FFFF; }
+
+.metais_de_transicao { background: #6A5ACD; }
+
+.metais_pos_transicao { background: #7FFFD4; }
+
+.semi_metais { background: #B0E0E6; }
+
+.nao_metais_poliatomicos { background: #87CEFA; }
+
+.nao_metais_diatomicos { background: #5F9EA0; }
+
+.gases_nobres { background: #BA55D3; }
+
+.desconhecidos { background: #4B0082; }
+
+.lantanideos { background: #C71585; }
+
+.actinideos { background: #FF1493; }
