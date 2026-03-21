@@ -37,3 +37,34 @@ window.addEventListener("click", (e) => {
 window.onload = () => {
     modal.style.display = "none"
 }
+
+// buscar pelo menu hambúrguer
+
+let links = document.querySelectorAll("#menuDropdown a")
+let ativo = null
+
+links.forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault()
+
+        let classe = link.getAttribute("data-classe")
+
+        if(ativo === classe){
+            document.querySelectorAll(".elemento").forEach(el => {
+                el.classList.remove("aaaa")
+            })
+            ativo = null
+            return
+        }
+
+        ativo = classe
+
+        document.querySelectorAll(".elemento").forEach(el => {
+            el.classList.remove("aaaa")
+        })
+
+        document.querySelectorAll("." + classe).forEach(el => {
+            el.classList.add("aaaa")
+        })
+    })
+})

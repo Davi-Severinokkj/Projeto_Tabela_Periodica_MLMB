@@ -25,11 +25,17 @@
             <button id="buttonMenu">☰</button>
 
             <ul id="menuDropdown">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#" data-classe="metais_alcalinos">Metais Alcalinos</a></li>
+                <li><a href="#" data-classe="metais_alcalinos_terrosos">Metais Alcalinos Terrosos</a></li>
+                <li><a href="#" data-classe="metais_de_transicao">Metais de Transição</a></li>
+                <li><a href="#" data-classe="metais_pos_transicao">Metais pós transição</a></li>
+                <li><a href="#" data-classe="semi_metais">Semi Metais</a></li>
+                <li><a href="#" data-classe="nao_metais_poliatomicos">Não Metais Poliatômicos</a></li>
+                <li><a href="#" data-classe="nao_metais_diatomicos">Não Metais Diatômicos</a></li>
+                <li><a href="#" data-classe="gases_nobres">Gases Nobres</a></li>
+                <li><a href="#" data-classe="desconhecidos">Desconhecidos</a></li>
+                <li><a href="#" data-classe="lantanideos">Lantanídeos</a></li>
+                <li><a href="#" data-classe="actinideos">Actinídeos</a></li>
             </ul>
         </div>
 
@@ -40,7 +46,7 @@
     <div class="table-periodic">
 
     <!-- HIDROGÊNIO -->
-    <div class="elemento metais_alcalinos" onclick="abrirModal('Hidrogênio' , 'aaaaaaaaaa')" style="grid-column:1; grid-row:1; background: #5F9EA0;">
+    <div class="elemento nao_metais_diatomicos" onclick="abrirModal('Hidrogênio' , 'aaaaaaaaaa')" style="grid-column:1; grid-row:1; background: #5F9EA0;">
         <span class="numero">1</span>
         <a href="#" class="simbolo">H</a>
         <span class="nome">Hidrogênio</span>
@@ -61,7 +67,7 @@
     </div>
 
     <!-- BERÍLIO -->
-    <div class="elemento" style="grid-column:2; grid-row:2;">
+    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2; grid-row:2;">
         <span class="numero">4</span>
         <a href="#" class="simbolo">Be</a>
         <span class="nome">Berílio</span>
@@ -75,28 +81,28 @@
     </div>
 
     <!-- CARBONO -->
-    <div class="elemento" style="grid-column:14; grid-row:2;">
+    <div class="elemento nao_metais_poliatomicos" style="grid-column:14; grid-row:2;">
         <span class="numero">6</span>
         <a href="#" class="simbolo">C</a>
         <span class="nome">Carbono</span>
     </div>
 
     <!-- NITROGÊNIO -->
-    <div class="elemento" style="grid-column:15; grid-row:2;">
+    <div class="elemento nao_metais_diatomicos" style="grid-column:15; grid-row:2;">
         <span class="numero">7</span>
         <a href="#" class="simbolo">N</a>
         <span class="nome">Nitrogênio</span>
     </div>
 
     <!-- OXIGÊNIO -->
-    <div class="elemento" style="grid-column:16; grid-row:2;">
+    <div class="elemento nao_metais_diatomicos" style="grid-column:16; grid-row:2;">
         <span class="numero">8</span>
         <a href="#" class="simbolo">O</a>
         <span class="nome">Oxigênio</span>
     </div>
 
     <!-- FLÚOR -->
-    <div class="elemento" style="grid-column:17; grid-row:2;">
+    <div class="elemento nao_metais_diatomicos" style="grid-column:17; grid-row:2;">
         <span class="numero">9</span>
         <a href="#" class="simbolo">F</a>
         <span class="nome">Flúor</span>
@@ -117,7 +123,7 @@
     </div>
 
     <!-- MAGNÉSIO -->
-    <div class="elemento" style="grid-column:2;">
+    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2;">
         <span class="numero">12</span>
         <a href="#" class="simbolo">Mg</a>
         <span class="nome">Magnésio</span>    
@@ -138,21 +144,21 @@
     </div>
 
     <!-- FÓSFORO -->
-    <div class="elemento" style="grid-column:15; grid-row:3;">
+    <div class="elemento nao_metais_poliatomicos" style="grid-column:15; grid-row:3;">
         <span class="numero">15</span>
         <a href="#" class="simbolo">P</a>
         <span class="nome">Fósforo</span>    
     </div>
 
     <!-- ENXOFRE -->
-    <div class="elemento" style="grid-column:16; grid-row:3;">
+    <div class="elemento nao_metais_poliatomicos" style="grid-column:16; grid-row:3;">
         <span class="numero">16</span>
         <a href="#" class="simbolo">S</a>
         <span class="nome">Enxofre</span>    
     </div>
 
     <!-- CLORO -->
-    <div class="elemento" style="grid-column:17; grid-row:3;">
+    <div class="elemento nao_metais_diatomicos" style="grid-column:17; grid-row:3;">
         <span class="numero">17</span>
         <a href="#" class="simbolo">Cl</a>
         <span class="nome">Cloro</span>    
@@ -175,7 +181,7 @@
     </div>
 
     <!-- CÁLCIO -->
-    <div class="elemento" style="grid-column:2; grid-row:4;">
+    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2; grid-row:4;">
         <span class="numero">20</span>
         <a href="#" class="simbolo">Ca</a>
         <span class="nome">Cálcio</span>    
@@ -273,14 +279,14 @@
     </div>
 
     <!-- SELÊNIO -->
-    <div class="elemento" style="grid-column:16; grid-row:4;">
+    <div class="elemento nao_metais_poliatomicos" style="grid-column:16; grid-row:4;">
         <span class="numero">34</span>
         <a href="#" class="simbolo">Se</a>
         <span class="nome">Selênio</span>    
     </div>
 
     <!-- BROMO -->
-    <div class="elemento" style="grid-column:17; grid-row:4;">
+    <div class="elemento nao_metais_diatomicos" style="grid-column:17; grid-row:4;">
         <span class="numero">35</span>
         <a href="#" class="simbolo">Br</a>
         <span class="nome">Bromo</span>    
@@ -302,7 +308,7 @@
     </div>
 
     <!-- ESTRÔNCIO -->
-    <div class="elemento" style="grid-column:2; grid-row:5;">
+    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2; grid-row:5;">
         <span class="numero">38</span>
         <a href="#" class="simbolo">Sr</a>
         <span class="nome">Estrôncio</span>    
@@ -407,7 +413,7 @@
     </div>
 
     <!-- IODO -->
-    <div class="elemento" style="grid-column:17; grid-row:5;">
+    <div class="elemento nao_metais_diatomicos" style="grid-column:17; grid-row:5;">
         <span class="numero">53</span>
         <a href="#" class="simbolo">I</a>
         <span class="nome">Iodo</span>    
@@ -429,7 +435,7 @@
     </div>
 
     <!-- BÁRIO -->
-    <div class="elemento" style="grid-column:2; grid-row:6;">
+    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2; grid-row:6;">
         <span class="numero">56</span>
         <a href="#" class="simbolo">Ba</a>
         <span class="nome">Bário</span>    
@@ -550,7 +556,7 @@
     </div>
 
     <!-- RÁDIO -->
-    <div class="elemento" style="grid-column:2; grid-row:7;">
+    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2; grid-row:7;">
         <span class="numero">88</span>
         <a href="#" class="simbolo">Ra</a>
         <span class="nome">Rádio</span>    
@@ -592,168 +598,168 @@
     </div>
 
     <!-- MEITNÉRIO -->
-    <div class="elemento metais_de_transicao" style="grid-column:9; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:9; grid-row:7;">
         <span class="numero">109</span>
         <a href="#" class="simbolo">Mt</a>
         <span class="nome">Meitnério</span>    
     </div>
 
     <!-- DARMSTÁDTIO -->
-    <div class="elemento metais_de_transicao" style="grid-column:10; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:10; grid-row:7;">
         <span class="numero">110</span>
         <a href="#" class="simbolo">Ds</a>
         <span class="nome">Darmstádtio</span>    
     </div>
 
     <!-- ROENTGÊNIO -->
-    <div class="elemento metais_de_transicao" style="grid-column:11; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:11; grid-row:7;">
         <span class="numero">111</span>
         <a href="#" class="simbolo">Rg</a>
         <span class="nome">Roentgênio</span>    
     </div>
 
     <!-- COPERNÍCIO -->
-    <div class="elemento metais_de_transicao" style="grid-column:12; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:12; grid-row:7;">
         <span class="numero">112</span>
         <a href="#" class="simbolo">Cn</a>
         <span class="nome">Copernício</span>    
     </div>
 
     <!-- NIHÔNIO -->
-    <div class="elemento metais_pos_transicao" style="grid-column:13; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:13; grid-row:7;">
         <span class="numero">113</span>
         <a href="#" class="simbolo">Nh</a>
         <span class="nome">Nihônio</span>    
     </div>
 
     <!-- FLERÓVIO -->
-    <div class="elemento metais_pos_transicao" style="grid-column:14; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:14; grid-row:7;">
         <span class="numero">114</span>
         <a href="#" class="simbolo">Fl</a>
         <span class="nome">Fleróvio</span>    
     </div>
 
     <!-- MOSCÓVIO -->
-    <div class="elemento metais_pos_transicao" style="grid-column:15; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:15; grid-row:7;">
         <span class="numero">115</span>
         <a href="#" class="simbolo">Mc</a>
         <span class="nome">Moscóvio</span>    
     </div>
 
     <!-- LIVERMÓRIO -->
-    <div class="elemento metais_pos_transicao" style="grid-column:16; grid-row:7;">
+    <div class="elemento desconhecidos" style="grid-column:16; grid-row:7;">
         <span class="numero">116</span>
         <a href="#" class="simbolo">Lv</a>
         <span class="nome">Livermório</span>    
     </div>
 
     <!-- TENESSO -->
-    <div class="elemento" style="grid-column:17; grid-row:7; background: #4B0082;">
+    <div class="elemento desconhecidos" style="grid-column:17; grid-row:7; background: #4B0082;">
         <span class="numero">117</span>
         <a href="#" class="simbolo">Ts</a>
         <span class="nome">Tenesso</span>    
     </div>
 
     <!-- OGANESSON -->
-    <div class="elemento" style="grid-column:18; grid-row:7; background: #4B0082;">
+    <div class="elemento gases_nobres" style="grid-column:18; grid-row:7; background: #4B0082;">
         <span class="numero">118</span>
         <a href="#" class="simbolo">Og</a>
         <span class="nome">Oganesson</span>    
     </div>
 
     <!-- CÉRIO -->
-    <div class="elemento" style="grid-column:4; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:4; grid-row:10;">
         <span class="numero">58</span>
         <a href="#" class="simbolo">Ce</a>
         <span class="nome">Cério</span>  
     </div>
 
     <!-- PRASEODÍMIO -->
-    <div class="elemento" style="grid-column:5; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:5; grid-row:10;">
         <span class="numero">59</span>
         <a href="#" class="simbolo">Pr</a>
         <span class="nome">Praseodímio</span>  
     </div>
 
     <!-- NEODÍMIO -->
-    <div class="elemento" style="grid-column:6; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:6; grid-row:10;">
         <span class="numero">60</span>
         <a href="#" class="simbolo">Nd</a>
         <span class="nome">Neodímio</span>  
     </div>
 
     <!-- PROMÉCIO -->
-    <div class="elemento" style="grid-column:7; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:7; grid-row:10;">
         <span class="numero">61</span>
         <a href="#" class="simbolo">Pm</a>
         <span class="nome">Promécio</span>  
     </div>
 
     <!-- SAMÁRIO -->
-    <div class="elemento" style="grid-column:8; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:8; grid-row:10;">
         <span class="numero">62</span>
         <a href="#" class="simbolo">Sm</a>
         <span class="nome">Samário</span>  
     </div>
 
     <!-- EURÓPIO -->
-    <div class="elemento" style="grid-column:9; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:9; grid-row:10;">
         <span class="numero">63</span>
         <a href="#" class="simbolo">Eu</a>
         <span class="nome">Európio</span>  
     </div>
 
     <!-- GADOLÍNIO -->
-    <div class="elemento" style="grid-column:10; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:10; grid-row:10;">
         <span class="numero">64</span>
         <a href="#" class="simbolo">Gd</a>
         <span class="nome">Gadolínio</span>  
     </div>
 
     <!-- TÉRBIO -->
-    <div class="elemento" style="grid-column:11; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:11; grid-row:10;">
         <span class="numero">65</span>
         <a href="#" class="simbolo">Tb</a>
         <span class="nome">Térbio</span>  
     </div>
 
     <!-- DISPRÓSIO -->
-    <div class="elemento" style="grid-column:12; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:12; grid-row:10;">
         <span class="numero">66</span>
         <a href="#" class="simbolo">Dy</a>
         <span class="nome">Disprósio</span>  
     </div>
 
     <!-- HÓLMIO -->
-    <div class="elemento" style="grid-column:13; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:13; grid-row:10;">
         <span class="numero">67</span>
         <a href="#" class="simbolo">Ho</a>
         <span class="nome">Hólmio</span>  
     </div>
 
     <!-- ÉRBIO -->
-    <div class="elemento" style="grid-column:14; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:14; grid-row:10;">
         <span class="numero">68</span>
         <a href="#" class="simbolo">Er</a>
         <span class="nome">Érbio</span>  
     </div>
 
     <!-- TÚLIO -->
-    <div class="elemento" style="grid-column:15; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:15; grid-row:10;">
         <span class="numero">69</span>
         <a href="#" class="simbolo">Tm</a>
         <span class="nome">Túlio</span>  
     </div>
 
     <!-- ITÉRBIO -->
-    <div class="elemento" style="grid-column:16; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:16; grid-row:10;">
         <span class="numero">70</span>
         <a href="#" class="simbolo">Yb</a>
         <span class="nome">Itérbio</span>  
     </div>
 
     <!-- LUTÉCIO -->
-    <div class="elemento" style="grid-column:17; grid-row:10;">
+    <div class="elemento lantanideos" style="grid-column:17; grid-row:10;">
         <span class="numero">71</span>
         <a href="#" class="simbolo">Lu</a>
         <span class="nome">Lutécio</span>  
@@ -762,98 +768,98 @@
     <!-- ACTINÍDEOS -->
 
     <!-- TÓRIO -->
-    <div class="elemento" style="grid-column:4; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:4; grid-row:11;">
         <span class="numero">90</span>
         <a href="#" class="simbolo">Th</a>
         <span class="nome">Tório</span>  
     </div>
 
     <!-- PROTACTÍNIO -->
-    <div class="elemento" style="grid-column:5; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:5; grid-row:11;">
         <span class="numero">91</span>
         <a href="#" class="simbolo">Pa</a>
         <span class="nome">Protactínio</span>  
     </div>
 
     <!-- URÂNIO -->
-    <div class="elemento" style="grid-column:6; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:6; grid-row:11;">
         <span class="numero">92</span>
         <a href="#" class="simbolo">U</a>
         <span class="nome">Urânio</span>  
     </div>
 
     <!-- NETÚNIO -->
-    <div class="elemento" style="grid-column:7; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:7; grid-row:11;">
         <span class="numero">93</span>
         <a href="#" class="simbolo">Np</a>
         <span class="nome">Netúnio</span>  
     </div>
 
     <!-- PLUTÔNIO -->
-    <div class="elemento" style="grid-column:8; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:8; grid-row:11;">
         <span class="numero">94</span>
         <a href="#" class="simbolo">Pu</a>
         <span class="nome">Plutônio</span>  
     </div>
 
     <!-- AMERÍCIO -->
-    <div class="elemento" style="grid-column:9; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:9; grid-row:11;">
         <span class="numero">95</span>
         <a href="#" class="simbolo">Am</a>
         <span class="nome">Amerício</span>  
     </div>
 
     <!-- CÚRIO -->
-    <div class="elemento" style="grid-column:10; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:10; grid-row:11;">
         <span class="numero">96</span>
         <a href="#" class="simbolo">Cm</a>
         <span class="nome">Cúrio</span>  
     </div>
 
     <!-- BERQUÉLIO -->
-    <div class="elemento" style="grid-column:11; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:11; grid-row:11;">
         <span class="numero">97</span>
         <a href="#" class="simbolo">Bk</a>
         <span class="nome">Berquélio</span>  
     </div>
 
     <!-- CALIFÓRNIO -->
-    <div class="elemento" style="grid-column:12; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:12; grid-row:11;">
         <span class="numero">98</span>
         <a href="#" class="simbolo">Cf</a>
         <span class="nome">Califórnio</span>  
     </div>
 
     <!-- EINSTÊNIO -->
-    <div class="elemento" style="grid-column:13; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:13; grid-row:11;">
         <span class="numero">99</span>
         <a href="#" class="simbolo">Es</a>
         <span class="nome">Einstênio</span>  
     </div>
 
     <!-- FÉRMIO -->
-    <div class="elemento" style="grid-column:14; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:14; grid-row:11;">
         <span class="numero">100</span>
         <a href="#" class="simbolo">Fm</a>
         <span class="nome">Férmio</span>  
     </div>
 
     <!-- MENDELÉVIO -->
-    <div class="elemento" style="grid-column:15; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:15; grid-row:11;">
         <span class="numero">101</span>
         <a href="#" class="simbolo">Md</a>
         <span class="nome">Mendelévio</span>  
     </div>
 
     <!-- NOBÉLIO -->
-    <div class="elemento" style="grid-column:16; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:16; grid-row:11;">
         <span class="numero">102</span>
         <a href="#" class="simbolo">No</a>
         <span class="nome">Nobélio</span>  
     </div>
 
     <!-- LAURÊNCIO -->
-    <div class="elemento" style="grid-column:17; grid-row:11;">
+    <div class="elemento actinideos" style="grid-column:17; grid-row:11;">
         <span class="numero">103</span>
         <a href="#" class="simbolo">Lr</a>
         <span class="nome">Laurêncio</span>  

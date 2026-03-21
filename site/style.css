@@ -82,16 +82,20 @@ body{
 #menuDropdown.ativo{
     display:block;
 }
+.elemento.aaaa{
+    border: 1px solid #000000;
+    padding: 0px;
+    margin: 0px;
+}
 
 /* TABELA PERIÓDICA */
 
 .table-periodic{
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-    padding: 50px;
-    margin: auto;
-    list-style: none;
-    border-bottom: 1px solid;
+    display:grid;
+    grid-template-columns: repeat(18, minmax(40px, 1fr));
+    gap:4px;
+    padding:20px;
+    overflow-x:auto;
 }
 .table-periodic a{
     text-decoration: none;
@@ -102,8 +106,8 @@ body{
 
 .elemento{
     position:relative;
-    width:80px;
-    height:100px;
+    width:100%;
+    aspect-ratio: 4/5;
     border-radius:8px;
     display:flex;
     flex-direction:column;
@@ -189,6 +193,31 @@ body{
 
 .desconhecidos { background: #4B0082; }
 
-.lantanideos { background: #C71585; }
+.lantanideos { background: #ff00a2; }
 
-.actinideos { background: #FF1493; }
+.actinideos { background: #ad0b618f; }
+
+@media (max-width: 768px){
+
+    .table-periodic{
+        padding:10px;
+        gap:2px;
+    }
+
+    .elemento{
+        font-size:10px;
+    }
+
+    .simbolo{
+        font-size:16px;
+    }
+
+    .nome{
+        display:none; /* esconde nome no celular */
+    }
+
+    .numero{
+        font-size:8px;
+    }
+
+}
