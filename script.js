@@ -38,6 +38,7 @@ const descricao = document.getElementById("descricao")
 document.querySelectorAll(".elemento").forEach(el => {
     el.addEventListener("click", () => {
         document.body.style.overflow = 'hidden'
+        
         imagem.src = el.dataset.imagem
         nome.innerText = el.dataset.nome
         simbolo.innerHTML = el.dataset.simbolo
