@@ -19,10 +19,12 @@ let pretoEbranco = document.getElementById("black_white")
 pretoEbranco.addEventListener('click', () => {
 
     if(document.body.style.backgroundColor === "black"){
+        document.body.style.transition = "0.8s"
         document.body.style.backgroundColor = "white"
         document.body.style.color = "black"
-        
+
     }else{
+        document.body.style.transition = "0.8s"
         document.body.style.backgroundColor = "black"
         document.body.style.color = "white"
         
