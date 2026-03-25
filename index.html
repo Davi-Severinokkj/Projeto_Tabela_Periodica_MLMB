@@ -23,6 +23,7 @@
         <h2>Tabela Periódica MLMB</h2>
 
         <div class="menu-area">
+            <button id="buttonTableP">Mudar Tabela</button>
             <button id="buttonMenu">☰</button>
 
             <ul id="menuDropdown">
@@ -47,7 +48,7 @@
     <div class="table-periodic">
 
     <!-- HIDROGÊNIO -->
-    <div class="elemento nao_metais_diatomicos" onclick="abrirModal('Hidrogênio' , 'aaaaaaaaaa')" style="grid-column:1; grid-row:1; background: #5F9EA0;">
+    <div data-imagem="img/hidrogenio.jpg" data-nome="Nome do elemento: Hidrogênio" data-simbolo="Símbolo químico: H" data-number-Atomic="Número atômico (Z): 1" data-mass-Atomic="Massa atômica: 1,008 u" data-descricao="O hidrogênio (H) é o elemento mais abundante do universo, um gás incolor, inodoro e altamente inflamável" class="elemento nao_metais_diatomicos" style="grid-column:1; grid-row:1; background: #5F9EA0;">
         <span class="numero">1</span>
         <a href="#" class="simbolo">H</a>
         <span class="nome">Hidrogênio</span>
@@ -874,7 +875,11 @@
 <div id="modal" class="modal">
     <div class="modal-content">
         <span onclick="fecharModal()" class="fechar">&times;</span>
-        <h2 id="titulo"></h2>
+        <img src="" id="imagem_elemento">
+        <h2 id="nome"></h2>
+        <p id="simbolo_modal"></p>
+        <p id="numero_atomico"></p>
+        <p id="massa_atomica"></p>
         <p id="descricao"></p>
     </div>
 </div>

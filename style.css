@@ -24,6 +24,26 @@ body{
     margin: 0px;
 }
 
+#buttonTableP{
+    background: #85216f99;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.1s;
+    margin-right: 20px;
+}
+
+#buttonTableP:hover{
+    transform: scale(1.03);
+}
+
+#buttonTableP:active{
+    transform: scale(0.97);
+}
+
 #buttonBack{
     text-decoration:none;
     font-size:20pt;
@@ -41,30 +61,30 @@ body{
     border:none;
     background:whitesmoke;
     font-size:20px;
-    cursor:pointer;
+    cursor: pointer;
     padding:8px 12px;
 }
 
+#buttonMenu:hover{
+    transition: 0.3s;
+    transform: scale(1.03);
+    
+}
+
 #menuDropdown{
-
+    overflow: hidden;
     position: fixed;
-
     top: 60px;
     right: 20px;
-
-    z-index: 9999;
-
+    z-index: 1000;
     background: white;
-
     border-radius:6px;
     box-shadow:0 4px 10px rgba(0,0,0,0.15);
-
     list-style:none;
     padding:0;
     margin:0;
-
+    margin-top: 35px;
     width:180px;
-
     display:none;
 }
 
@@ -80,15 +100,28 @@ body{
 }
 
 #menuDropdown.ativo{
-    display:block;
+    display: block;
 }
 .elemento.aaaa{
-    border: 1px solid #000000;
+    border: 3px , red;
     padding: 0px;
     margin: 0px;
 }
 
 /* TABELA PERIÓDICA */
+
+.table-periodic.form{
+    display:grid;
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
+    gap:4px;
+    padding:20px;
+    overflow-x:auto;
+}
+
+.table-periodic.form .elemento{
+    grid-column: auto !important;
+    grid-row: auto !important;
+}
 
 .table-periodic{
     display:grid;
@@ -141,18 +174,22 @@ body{
 }
 
 /* sessão de informações dos elementos */
-.info-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
+.modal-content img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
 .modal{
     display: none;
 }
 .modal{
     display: none;
     position: fixed;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -199,13 +236,19 @@ body{
 
 @media (max-width: 768px){
 
-    .table-periodic{
-        padding:10px;
-        gap:2px;
+    h2{
+        display: none;
     }
 
-    .elemento{
-        font-size:10px;
+    .header_container{
+        display:flex;
+        justify-content:space-between;
+        align-items:center; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:auto;
+        padding:10px;
+        border-bottom: 1px solid;
     }
 
     .simbolo{
