@@ -9,6 +9,7 @@ body{
 
 /* HEADER */
 
+
 .header_container{
     display:flex;
     justify-content:space-between;
@@ -24,6 +25,17 @@ body{
     margin: 0px;
     width: 100px;
     height: auto;
+}
+
+#search{
+    justify-self: center;
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
 #black_white{
@@ -126,14 +138,14 @@ body{
 /* TABELA PERIÓDICA */
 
 .table-periodic.form{
-    display:grid;
-    grid-template-columns: repeat(7, minmax(40px, 1fr));
-    gap:4px;
-    padding:20px;
-    overflow-x:auto;
-    border-radius: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 20px;
 }
-
+.table-periodic.form .elemento{
+    width: calc(100% / 7);
+}
 .table-periodic.form .elemento{
     grid-column: auto !important;
     grid-row: auto !important;
@@ -207,7 +219,7 @@ body{
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
-
+    z-index: 9999;
     align-items: center;
     justify-content: center;
 }
@@ -223,6 +235,7 @@ body{
     width: 300px;
     border-radius: 10px;
     text-align: center;
+    z-index: 9999;
 }
 
 .fechar {
@@ -313,3 +326,14 @@ body{
 .modal{
     backdrop-filter: blur(1px);
 }
+.metais_alcalinos{ order: 1; }
+.metais_alcalinos_terrosos{ order: 2; }
+.metais_de_transicao{ order: 3; }
+.metais_pos_transicao{ order: 4; }
+.semi_metais{ order: 5; }
+.nao_metais_poliatomicos{ order: 6; }
+.nao_metais_diatomicos{ order: 6; }
+.gases_nobres{ order: 7; }
+.desconhecidos{ order: 8; }
+.lantanideos{ order: 9; }
+.actinideos{ order: 10; }
