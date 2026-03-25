@@ -13,6 +13,14 @@ botao.addEventListener("click", () => {
         document.body.style.overflow = "auto"
     }
 })
+/*
+let pretoEbranco = document.getElementById("black_white")
+
+ pretoEbranco.addEventListener('click' , () =>{
+    document.body.style.backgroundColor = "black"
+    document.body.style.color = "white"
+})
+*/
 
 
 let tabelaPeriodica = document.querySelector(".table-periodic")

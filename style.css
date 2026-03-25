@@ -22,6 +22,25 @@ body{
 .header_container img{
     padding: 0px;
     margin: 0px;
+    width: 100px;
+    height: auto;
+}
+
+#black_white{
+    background: #6f095994;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.1s;
+    margin-right: 20px;
+}
+
+#black_white:hover{
+    transform: scale(1.03);
+    transition: 0,3s;
 }
 
 #buttonTableP{
@@ -44,12 +63,6 @@ body{
     transform: scale(0.97);
 }
 
-#buttonBack{
-    text-decoration:none;
-    font-size:20pt;
-    padding:10px;
-    color:black;
-}
 
 /* MENU */
 
@@ -103,9 +116,11 @@ body{
     display: block;
 }
 .elemento.aaaa{
-    background:rgba(0, 0, 0, 0.501);
     padding: 0px;
     margin: 0px;
+    background-color: #ad030e; /* Tom mais escuro */
+    color: white;
+    transition: 0.3s; /* Transição suave */
 }
 
 /* TABELA PERIÓDICA */
@@ -287,11 +302,13 @@ body{
     transform: translateY(-10px);
     opacity: 0;
     transition: 0.2s;
+    
 }
 
 #menuDropdown.ativo{
     transform: translateY(0);
     opacity: 1;
+
 }
 .modal{
     backdrop-filter: blur(1px);
