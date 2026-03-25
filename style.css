@@ -103,7 +103,7 @@ body{
     display: block;
 }
 .elemento.aaaa{
-    border: 3px , red;
+    background:rgba(0, 0, 0, 0.501);
     padding: 0px;
     margin: 0px;
 }
@@ -116,6 +116,7 @@ body{
     gap:4px;
     padding:20px;
     overflow-x:auto;
+    border-radius: 1px;
 }
 
 .table-periodic.form .elemento{
@@ -182,19 +183,22 @@ body{
     display: block;
     margin: auto;
 }
-.modal{
-    display: none;
-}
-.modal{
+
+#modal{
     display: none;
     position: fixed;
-    align-items: center;
-    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
+
+    align-items: center;
+    justify-content: center;
+}
+
+#modal.ativo{
+    display: flex;
 }
 
 .modal-content {
@@ -263,4 +267,32 @@ body{
         font-size:8px;
     }
 
+}
+.elemento{
+    transition: 0.2s;
+}
+
+.elemento:hover{
+    transform: scale(1.08);
+    z-index: 2;
+}
+#buttonTableP{
+    transition: 0.15s;
+}
+
+#buttonTableP:active{
+    transform: scale(0.95);
+}
+#menuDropdown{
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#menuDropdown.ativo{
+    transform: translateY(0);
+    opacity: 1;
+}
+.modal{
+    backdrop-filter: blur(1px);
 }

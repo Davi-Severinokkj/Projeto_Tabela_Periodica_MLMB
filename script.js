@@ -37,23 +37,26 @@ const descricao = document.getElementById("descricao")
 // adiciona evento em TODOS os elementos
 document.querySelectorAll(".elemento").forEach(el => {
     el.addEventListener("click", () => {
-        document.body.style.overflow = 'hidden'
-        
+        document.body.style.overflow = "hidden"
+
         imagem.src = el.dataset.imagem
         nome.innerText = el.dataset.nome
         simbolo.innerHTML = el.dataset.simbolo
         numberAtomic.innerHTML = el.dataset.numberAtomic
         massAtomic.innerHTML = el.dataset.massAtomic
         descricao.innerText = el.dataset.descricao
-        modal.style.display = "block"
+
+        modal.style.display = "flex"
     })
 })
+
+
 
 // fechar modal
 function fecharModal(){
     modal.style.display = "none"
+    document.body.style.overflow = "auto"
 }
-
 // fechar clicando fora
 window.addEventListener("click", (e) => {
     if(e.target === modal){
