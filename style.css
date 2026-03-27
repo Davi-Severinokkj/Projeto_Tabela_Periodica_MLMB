@@ -140,11 +140,13 @@ body{
 .table-periodic.form{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 4px;
     padding: 20px;
 }
 .table-periodic.form .elemento{
-    width: calc(100% / 8);
+    width: calc(100% / 7);
 }
 .table-periodic.form .elemento{
     grid-column: auto !important;
@@ -179,9 +181,6 @@ body{
 
 .elemento:hover{
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 
-        8px 8px 15px rgba(0,0,0,0.4),
-        -4px -4px 10px rgba(255,255,255,0.3);
 }
 
 
