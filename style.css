@@ -174,7 +174,16 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    cursor: pointer;
 }
+
+.elemento:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 
+        8px 8px 15px rgba(0,0,0,0.4),
+        -4px -4px 10px rgba(255,255,255,0.3);
+}
+
 
 /* número */
 .numero{
@@ -188,12 +197,13 @@ body{
 .simbolo{
     font-size:28px;
     font-weight:bold;
+    cursor: pointer;
 }
-.simbolo:hover{
-    transform: scale(1.2);
-    color: rgba(0, 0, 0, 0.705);
-    transition: 0.1s;
+
+span{
+    cursor: pointer;
 }
+
 
 /* nome */
 .nome{
@@ -357,8 +367,9 @@ body{
 .metais_pos_transicao{ order: 4; }
 .semi_metais{ order: 5; }
 .nao_metais_poliatomicos{ order: 6; }
-.nao_metais_diatomicos{ order: 6; }
-.gases_nobres{ order: 7; }
-.desconhecidos{ order: 8; }
-.lantanideos{ order: 9; }
-.actinideos{ order: 10; }
+.nao_metais_diatomicos{ order: 7; }
+.gases_nobres{ order: 8; }
+.desconhecidos{ order: 9; }
+.lantanideos{ order: 10; }
+.actinideos{ order: 11; }
+
