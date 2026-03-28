@@ -24,6 +24,7 @@ pretoEbranco.addEventListener('click', () => {
         document.body.style.color = "black"
 
     }else{
+        modal.style.color = "black"
         document.body.style.transition = "0.8s"
         document.body.style.backgroundColor = "black"
         document.body.style.color = "white"
