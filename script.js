@@ -37,6 +37,7 @@ pretoEbranco.addEventListener('click', () => {
 let tabelaPeriodica = document.querySelector(".table-periodic")
 let botaoTabela = document.querySelector("#buttonTableP")
 
+
 botaoTabela.addEventListener("click", ()=>{
     tabelaPeriodica.classList.toggle('form')
 })
