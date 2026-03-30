@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="icon" type="image/png" href="img/logo 40 anos.png">
 
 <title>Tabela Periódica</title>
 </head>
@@ -15,13 +16,15 @@
 <header>
     <div class="header_container">
 
-        <a href="#" id="buttonBack">
-            <img src="img/logo 40 anos.png" alt="" height="80px" width="80px">
+        <a href="#" id="logo">
+            <img src="img/logo 40 anos.png" alt="logo 40 anos mlmb" style="width: 175px; height: auto; padding: 0px;">
         </a>
 
         <h2>Tabela Periódica MLMB</h2>
 
         <div class="menu-area">
+            <button id="black_white"><i class="fa-solid fa-moon"></i></button>
+            <button id="buttonTableP">Mudar Tabela</button>
             <button id="buttonMenu">☰</button>
 
             <ul id="menuDropdown">
@@ -42,103 +45,105 @@
     </div>
 </header>
 
-<div class="tabela_container">
-    <main>
+<input type="text" id="search" autocomplete="off" placeholder="Pesquisar elemento...">
+
+<main>
     <div class="table-periodic">
+        
 
     <!-- HIDROGÊNIO -->
-    <div class="elemento nao_metais_diatomicos" onclick="abrirModal('aaaaaaaaaaaaaa' , 'ddddddddddddd')" style="grid-column:1; grid-row:1; background: #5F9EA0;">
+    <div data-imagem="img/hidrogenio.jpg" data-nome="Nome do elemento: Hidrogênio" data-simbolo="Símbolo químico: H" data-number-Atomic="Número atômico (Z): 1" data-mass-Atomic="Massa atômica: 1,008 u" data-descricao="O hidrogênio (H) é o elemento mais abundante do universo, um gás incolor, inodoro e altamente inflamável" class="elemento nao_metais_diatomicos" style="grid-column:1; grid-row:1; background: #5F9EA0;">
         <span class="numero">1</span>
         <a href="#" class="simbolo">H</a>
         <span class="nome">Hidrogênio</span>
     </div>
 
     <!-- HÉLIO -->
-    <div class="elemento gases_nobres" data-nome="" data-desc="" style="grid-column:18; grid-row:1; background: #00FFFF;">
+    <div class="elemento gases_nobres" data-nome="Nome do elemento: Hélio" data-desc="" style="grid-column:18; grid-row:1;">
         <span class="numero">2</span>
         <a href="#" class="simbolo">He</a>
         <span class="nome">Hélio</span>
     </div>
 
     <!-- LÍTIO -->
-    <div class="elemento metais_alcalinos" style="grid-column:1; grid-row:2;">
+    <div class="elemento metais_alcalinos" data-nome="Nome do elemento: Lítio" style="grid-column:1; grid-row:2;">
         <span class="numero">3</span>
         <a href="#" class="simbolo">Li</a>
         <span class="nome">Lítio</span>
     </div>
 
     <!-- BERÍLIO -->
-    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2; grid-row:2;">
+    <div class="elemento metais_alcalinos_terrosos" data-nome="Nome do elemento: Berílio" style="grid-column:2; grid-row:2;">
         <span class="numero">4</span>
         <a href="#" class="simbolo">Be</a>
         <span class="nome">Berílio</span>
     </div>
 
     <!-- BORO -->
-    <div class="elemento semi_metais" style="grid-column:13; grid-row:2;">
+    <div class="elemento semi_metais" data-nome="Nome do elemento: Boro" style="grid-column:13; grid-row:2;">
         <span class="numero">5</span>
         <a href="#" class="simbolo">B</a>
         <span class="nome">Boro</span>
     </div>
 
     <!-- CARBONO -->
-    <div class="elemento nao_metais_poliatomicos" style="grid-column:14; grid-row:2;">
+    <div class="elemento nao_metais_poliatomicos" data-nome="Nome do elemento: Carbono" style="grid-column:14; grid-row:2;">
         <span class="numero">6</span>
         <a href="#" class="simbolo">C</a>
         <span class="nome">Carbono</span>
     </div>
 
     <!-- NITROGÊNIO -->
-    <div class="elemento nao_metais_diatomicos" style="grid-column:15; grid-row:2;">
+    <div class="elemento nao_metais_diatomicos" data-nome="Nome do elemento: Nitrogênio" style="grid-column:15; grid-row:2;">
         <span class="numero">7</span>
         <a href="#" class="simbolo">N</a>
         <span class="nome">Nitrogênio</span>
     </div>
 
     <!-- OXIGÊNIO -->
-    <div class="elemento nao_metais_diatomicos" style="grid-column:16; grid-row:2;">
+    <div class="elemento nao_metais_diatomicos" data-nome="Nome do elemento: Oxigênio" style="grid-column:16; grid-row:2;">
         <span class="numero">8</span>
         <a href="#" class="simbolo">O</a>
         <span class="nome">Oxigênio</span>
     </div>
 
     <!-- FLÚOR -->
-    <div class="elemento nao_metais_diatomicos" style="grid-column:17; grid-row:2;">
+    <div class="elemento nao_metais_diatomicos" data-nome="Nome do elemento: Flúor" style="grid-column:17; grid-row:2;">
         <span class="numero">9</span>
         <a href="#" class="simbolo">F</a>
         <span class="nome">Flúor</span>
     </div>
 
     <!-- NEÔNIO -->
-    <div class="elemento gases_nobres" data-nome="" data-desc="" style="grid-column:18; grid-row:2;">
+    <div class="elemento gases_nobres" data-nome="Nome do elemento: Neônio" data-desc="" style="grid-column:18; grid-row:2;">
         <span class="numero">10</span>
         <a href="#" class="simbolo">Ne</a>
         <span class="nome">Neônio</span>
     </div>
 
     <!-- SÓDIO -->
-    <div class="elemento metais_alcalinos" style="grid-column:1;">
+    <div class="elemento metais_alcalinos" data-nome="Nome do elemento: Sódio" style="grid-column:1;">
         <span class="numero">11</span>
         <a href="#" class="simbolo">Na</a>
         <span class="nome">Sódio</span>    
     </div>
 
     <!-- MAGNÉSIO -->
-    <div class="elemento metais_alcalinos_terrosos" style="grid-column:2;">
+    <div class="elemento metais_alcalinos_terrosos" data-nome="Nome do elemento: Magnésio" style="grid-column:2;">
         <span class="numero">12</span>
         <a href="#" class="simbolo">Mg</a>
         <span class="nome">Magnésio</span>    
     </div>
 
     <!-- ALUMÍNIO -->
-    <div class="elemento metais_pos_transicao" style="grid-column:13; grid-row:3;">
+    <div class="elemento metais_pos_transicao" data-nome="Nome do elemento: Alumínio" style="grid-column:13; grid-row:3;">
         <span class="numero">13</span>
         <a href="#" class="simbolo">Al</a>
         <span class="nome">Alumínio</span>    
     </div>
 
     <!-- SILÍCIO -->
-    <div class="elemento semi_metais" style="grid-column:14; grid-row:3;">
+    <div class="elemento semi_metais" data-nome="Nome do elemento: Silício" style="grid-column:14; grid-row:3;">
         <span class="numero">14</span>
         <a href="#" class="simbolo">Si</a>
         <span class="nome">Silício</span>    
@@ -869,15 +874,16 @@
 
 </div>
 </main>
-</div>
-
-
 
 <!-- Modal -->
 <div id="modal" class="modal">
     <div class="modal-content">
         <span onclick="fecharModal()" class="fechar">&times;</span>
-        <h2 id="titulo"></h2>
+        <img src="" id="imagem_elemento">
+        <h2 id="nome"></h2>
+        <p id="simbolo_modal"></p>
+        <p id="numero_atomico"></p>
+        <p id="massa_atomica"></p>
         <p id="descricao"></p>
     </div>
 </div>
