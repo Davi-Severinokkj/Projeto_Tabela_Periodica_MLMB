@@ -90,12 +90,15 @@ body{
 
 /* TABELA PERIÓDICA */
 
+.tabela_container{
+    overflow-x: auto;
+}
+
 .table-periodic{
     display:grid;
     grid-template-columns: repeat(18, minmax(40px, 1fr));
     gap:4px;
     padding:20px;
-    overflow-x:auto;
 }
 .table-periodic a{
     text-decoration: none;
@@ -199,15 +202,12 @@ body{
 
 @media (max-width: 768px){
 
-    .table-periodic{
-        padding:10px;
-        gap:2px;
-    }
+
+
 
     .elemento{
         font-size:10px;
     }
-
     .simbolo{
         font-size:16px;
     }
@@ -215,6 +215,7 @@ body{
     .nome{
         display:none; /* esconde nome no celular */
     }
+
 
     .numero{
         font-size:8px;
