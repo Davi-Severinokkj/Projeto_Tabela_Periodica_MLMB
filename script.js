@@ -1,0 +1,158 @@
+// ===== MENU =====
+let botao = document.querySelector("#buttonMenu")
+let menu = document.querySelector("#menuDropdown")
+
+
+
+botao.addEventListener("click", () => {
+    menu.classList.toggle("ativo")
+
+    if(menu.classList.contains("ativo")){
+        document.body.style.overflow = "hidden"
+    } else {
+        document.body.style.overflow = "auto"
+    }
+})
+
+let pretoEbranco = document.getElementById("black_white")
+
+pretoEbranco.addEventListener('click', () => {
+
+    if(document.body.style.backgroundColor === "black"){
+        document.body.style.transition = "0.8s"
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
+
+    }else{
+        modal.style.color = "black"
+        document.body.style.transition = "0.8s"
+        document.body.style.backgroundColor = "black"
+        document.body.style.color = "white"
+        
+    }
+
+})
+
+
+
+let tabelaPeriodica = document.querySelector(".table-periodic")
+let botaoTabela = document.querySelector("#buttonTableP")
+
+
+botaoTabela.addEventListener("click", ()=>{
+    tabelaPeriodica.classList.toggle('form')
+})
+
+
+// ===== MODAL =====
+
+const modal = document.getElementById("modal")
+const imagem = document.getElementById("imagem_elemento")
+const nome = document.getElementById("nome")
+const simbolo = document.getElementById("simbolo_modal")
+const numberAtomic = document.getElementById("numero_atomico")
+const massAtomic = document.getElementById("massa_atomica")
+const descricao = document.getElementById("descricao")
+
+
+// adiciona evento em TODOS os elementos
+document.querySelectorAll(".elemento").forEach(el => {
+    el.addEventListener("click", () => {
+        document.body.style.overflow = "hidden"
+
+        imagem.src = el.dataset.imagem
+        nome.innerText = el.dataset.nome
+        simbolo.innerHTML = el.dataset.simbolo
+        numberAtomic.innerHTML = el.dataset.numberAtomic
+        massAtomic.innerHTML = el.dataset.massAtomic
+        descricao.innerText = el.dataset.descricao
+
+        modal.style.display = "flex"
+    })
+})
+
+
+
+// fechar modal
+function fecharModal(){
+    modal.style.display = "none"
+    document.body.style.overflow = "auto"
+}
+// fechar clicando fora
+window.addEventListener("click", (e) => {
+    if(e.target === modal){
+        fecharModal()
+    }
+})
+
+// garantir que inicia fechado
+window.onload = () => {
+    modal.style.display = "none"
+}
+
+// buscar pelo menu hambúrguer
+
+let links = document.querySelectorAll("#menuDropdown a")
+let ativo = null
+
+let voltar = document.getElementsByTagName('body')
+links.forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault()
+
+        
+
+        let classe = link.getAttribute("data-classe")
+
+        if(ativo === classe){
+            document.querySelectorAll(".elemento").forEach(el => {
+                el.classList.remove("aaaa")
+            })
+            ativo = null
+
+            document.body.style.overflow = "auto"
+            return
+        }
+
+        ativo = classe
+
+        document.querySelectorAll(".elemento").forEach(el => {
+            el.classList.remove("aaaa")
+        })
+
+        document.querySelectorAll("." + classe).forEach(el => {
+            el.classList.add("aaaa")
+        })
+
+        document.body.style.overflow = "auto"
+        document.body.style.overflow = "auto"
+        menu.classList.remove("ativo")
+    })
+})
+
+// barra de pesquisa
+
+let search = document.getElementById("search")
+
+search.addEventListener("input" , () =>{
+    console.log(search.value)
+})
+
+
+let elementos = document.querySelectorAll(".elemento")
+
+search.addEventListener("input", () => {
+
+    let texto = search.value.toLowerCase()
+
+    elementos.forEach(el => {
+        let nome = el.dataset.nome.toLowerCase()
+
+        if(nome.includes(texto)){
+            el.style.opacity = "1"
+        }else{
+            el.style.opacity = "0.2"
+        }
+    })
+
+})
