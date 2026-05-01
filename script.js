@@ -55,19 +55,27 @@ const massAtomic = document.getElementById("massa_atomica")
 const descricao = document.getElementById("descricao")
 
 
-// adiciona evento em TODOS os elementos
 document.querySelectorAll(".elemento").forEach(el => {
     el.addEventListener("click", () => {
+
         document.body.style.overflow = "hidden"
 
-        imagem.src = el.dataset.imagem
-        nome.innerText = el.dataset.nome
-        simbolo.innerHTML = el.dataset.simbolo
-        numberAtomic.innerHTML = el.dataset.numberAtomic
-        massAtomic.innerHTML = el.dataset.massAtomic
-        descricao.innerText = el.dataset.descricao
+        let id = el.querySelector(".numero").innerText
 
-        modal.style.display = "flex"
+        fetch("buscar_elemento.php?id=" + id)
+        .then(response => response.json())
+        .then(dado => {
+
+            imagem.src = dado.imagem
+            nome.innerText = dado.nome
+            simbolo.innerHTML = "Símbolo: " + dado.simbolo
+            numberAtomic.innerHTML = "Número atômico: " + dado.numero_atomico
+            massAtomic.innerHTML = "Massa: " + dado.massa_atomica
+            descricao.innerText = dado.descricao
+
+            modal.style.display = "flex"
+        })
+
     })
 })
 
